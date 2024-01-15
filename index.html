@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>2024 Sports Trip Planner</title>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Stylesheet and JavaScript -->
+
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>2024 Sports Trip Planner</h1>
+
+            <!-- Inputs -->
+            <div id="all-filters">
+                <h2>Trip Filters</h2>
+                
+                <div id="date-filters">
+                    <!-- Start Date Range -->
+                    <div class="input-filter" id="start-date-div">
+                        <input type="date" id="start-date-filter" placeholder="Start Date Range">
+                    </div>
+
+                    <!-- Start Date Range -->
+                    <div class="input-filter" id="end-date-div">
+                        <input type="date" id="end-date-filter" placeholder="End Date Range">
+                    </div>
+                </div>
+
+                <div id="sport-filters">
+                    <!-- League Filter -->
+                    <div class="input-filter" id="league-div">
+                        <select name="league-input" id="league-select">
+                            <option value="0"></option>
+                            <option value="cfb">CFB</option>
+                            <option value="nfl">NFL</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div><!-- /Inputs-->
+
+            <!-- Map -->
+            <div id="map"></div>
+
+            <!-- Travel Calculator -->
+            <div id="travel-calculator">
+                <h2>Travel Calculator</h2>
+                
+                <!-- Travel Filters -->
+                <div id="travel-filters">
+                    
+                    <div class="location-div" id="start-location">
+                        <input name="start-location" id="start-location">
+                        <datalist id="start-location-datalist"></datalist>
+                        <input type="button" name="clear-start" id="clear-start-button">
+                    </div>
+
+                    <div class="location-div" id="end-location">
+                        <input name="end-location" id="end-location">
+                        <datalist id="end-location-datalist"></datalist>
+                        <input type="button" name="clear-end" id="clear-end-button">
+                    </div>
+
+                </div><!-- Travel Filters -->
+
+                <!-- Travel Results -->
+                <div id="travel-results-div">
+                    <div class="travel-results" id="travel-distance-div">
+                        <p>Distance: <span id="distance"></span></p>
+                    </div>
+
+                    <div class="travel-results" id="drive-duration-div">
+                        <p>Drive duration: <span id="drive-duration"></span></p>
+                    </div>
+
+                    <div class="travel-results" id="train-duration-div">
+                        <p>Train duration: <span id="train-duration"></span></p>
+                    </div>
+                </div><!-- Travel Results -->
+
+            </div><!-- /Travel Calculator -->
+
+        </div>
+    </body>
+</html>
